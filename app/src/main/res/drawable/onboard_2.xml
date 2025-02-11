@@ -1,0 +1,30 @@
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="375dp"
+    android:height="812dp"
+    android:viewportWidth="1"
+    android:viewportHeight="1">
+<group>
+<clip-path
+    android:pathData="M0 0H1V1H0Z" /> <!-- Простой прямоугольник для заполнения всего пространства -->
+
+<path
+    android:pathData="M0 0H1V1H0">
+    <aapt:attr name="android:fillColor">
+        <gradient
+            android:type="linear"
+            android:startX="0%"
+            android:startY="50%"
+            android:endX="100%"
+            android:endY="50%">
+        <item
+            android:color="#48B2E7"
+            android:offset="0" />
+        <item
+            android:color="#2B6B8B"
+            android:offset="1" />
+    </gradient>
+</aapt:attr>
+</path>
+    </group>
+    </vector>

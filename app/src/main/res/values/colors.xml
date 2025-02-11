@@ -8,4 +8,5 @@
     <color name="sub_text_dark">#707B81</color>
     <color name="hint">#6A6A6A</color>
     <color name="accent">#48B2E7</color>
+    <color name="background">#F7F7F9</color>
 </resources>
