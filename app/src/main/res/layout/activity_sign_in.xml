@@ -49,7 +49,7 @@
         android:ems="10"
         android:gravity="center_vertical"
         android:inputType="textEmailAddress"
-        android:text="xyz@gmail.com"
+        android:hint="xyz@gmail.com"
         android:textColor="@color/hint"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +75,7 @@
         android:ems="10"
         android:gravity="center_vertical"
         android:inputType="textPassword"
-        android:text="••••••••"
+        android:hint="••••••••"
         android:textColor="@color/hint"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +93,7 @@
         android:background="@null"/>
 
     <TextView
-        android:id="@+id/btn_restore"
+        android:id="@+id/tv_restore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
