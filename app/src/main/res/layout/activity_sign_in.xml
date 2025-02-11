@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="121dp"
+        android:text="Привет!"
+        android:textSize="32sp"
+        android:textStyle="italic"
+        android:textColor="@color/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Заполните Свои данные или продолжите через социальные медиа"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="245dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="textEmailAddress"
+        android:text="xyz@gmail.com"
+        android:textColor="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="353dp"
+        android:text="Пароль"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:text="••••••••"
+        android:textColor="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+    <ImageButton
+        android:id="@+id/btn_password"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_password"
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
+        app:layout_constraintTop_toTopOf="@+id/et_password"
+        app:srcCompat="@drawable/eye"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/btn_restore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:text="Восстановить"
+        android:textSize="12sp"
+        android:textColor="@color/sub_text_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="487dp"
+        android:backgroundTint="@color/accent"
+        android:text="Войти"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="746dp"
+        android:text="Вы впервые?"
+        android:textColor="@color/hint"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="87dp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создать пользователя"
+        android:textColor="@color/text"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_question"
+        app:layout_constraintStart_toEndOf="@+id/tv_question"
+        app:layout_constraintTop_toTopOf="@+id/tv_question" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MMatule" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <!-- Default style for buttons -->
+        <item name="buttonStyle">@style/Widget.MM.Button</item>
+
+        <!-- Default style for TextViews -->
+        <item name="android:textViewStyle">@style/Widget.MM.TextView</item>
+    </style>
+
+    <style name="Theme.MMatule" parent="Base.Theme.MMatule" />
+
+    <!-- Custom Button Style -->
+    <style name="Widget.MM.Button" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MM.Button</item>
+    </style>
+
+    <!-- Shape Appearance for Buttons -->
+    <style name="ShapeAppearance.MM.Button" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14dp</item>
+    </style>
+
+    <!-- Custom TextView Style -->
+    <style name="Widget.MM.TextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/new_peninim_mt_2</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
